@@ -43,5 +43,19 @@
         }
       }
     }
+  },
+  "storage": {
+    "imagestorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
+    }
+  },
+  "function": {
+    "reactawsamplifytutor4af0a14e": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
   }
 }
